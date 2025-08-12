@@ -3,6 +3,16 @@
   здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
+:root {
+  --body-background-color:#000028;
+  --common-text-color:#F1B2CE;
+  --big-text-color:#DB00FF;
+  --accent-color:#FF0070;
+  --accent-text-color:#FF0070;
+  --background-accent-color:#FF0070;
+  --background-accent-text-color:#000028;
+  --bg-image: url("/images/cover-image-dark.png");
+}
 
 .page.theme_dark {
   /* сохраните этот селектор в приведённом виде.
