@@ -4,11 +4,11 @@
 */
 
 :root {
-  --body-background-color:#000028;
-  --common-text-color:#F1B2CE;
-  --big-text-color:#DB00FF;
-  --accent-color:#FF0070;
-  --accent-text-color:#FF0070;
-  --background-accent-color:#FF0070;
-  --background-accent-text-color:#000028;
+  --body-background-color: #000028;
+  --common-text-color: #f1b2ce;
+  --big-text-color: #db00ff;
+  --accent-color: #ff0070;
+  --accent-text-color: #ff0070;
+  --background-accent-color: #ff0070;
+  --background-accent-text-color: #000028;
 }

@@ -5,13 +5,13 @@
 */
 
 :root.theme_light {
-  --body-background-color:#FFF1F7;
-  --common-text-color:#353430;
-  --big-text-color:#FFC2E6;
-  --accent-color:#353430;
-  --accent-text-color:#353430;
-  --background-accent-color:#FF8DCB;
-  --background-accent-text-color:#353430;
+  --body-background-color: #fff1f7;
+  --common-text-color: #353430;
+  --big-text-color: #ffc2e6;
+  --accent-color: #353430;
+  --accent-text-color: #353430;
+  --background-accent-color: #ff8dcb;
+  --background-accent-text-color: #353430;
   --bg-image: url("/images/cover-image-light.png");
 }
 
@@ -23,15 +23,15 @@
   color: transparent;
 }
 
-@media (prefers-color-scheme: light) { 
+@media (prefers-color-scheme: light) {
   :root {
-    --body-background-color:#FFF1F7;
-    --common-text-color:#353430;
-    --big-text-color:#FFC2E6;
-    --accent-color:#353430;
-    --accent-text-color:#353430;
-    --background-accent-color:#FF8DCB;
-    --background-accent-text-color:#353430;
+    --body-background-color: #fff1f7;
+    --common-text-color: #353430;
+    --big-text-color: #ffc2e6;
+    --accent-color: #353430;
+    --accent-text-color: #353430;
+    --background-accent-color: #ff8dcb;
+    --background-accent-text-color: #353430;
     --bg-image: url("/images/cover-image-light.png");
   }
 
