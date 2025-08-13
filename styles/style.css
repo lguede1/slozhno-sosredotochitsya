@@ -97,10 +97,10 @@ body {
 }
 
 .header {
-  min-height: 648px;
+  min-height: 628px;
   min-width: 355px;
   margin: 10px;
-  height: 94vh;
+  height: 97vh;
   display: grid;
   grid-template-rows: 0 1fr 1fr 1fr;
   position: relative;
@@ -210,7 +210,7 @@ body {
   }
 
   .header__title {
-    margin: 0px 0 115px 0;
+    margin: 0px 0 11vh 0;
   }
 
   .main {
