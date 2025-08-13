@@ -44,6 +44,11 @@
   cursor: pointer;
 }
 
+.link:focus-visible {
+  outline: none;
+  outline: 1px solid var(--common-text-color  );
+}
+
 .link:hover {
   border-block-end: 1px solid var(--common-text-color);
 }
