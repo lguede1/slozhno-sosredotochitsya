@@ -31,12 +31,12 @@
 }
 
 .header__big-text {
-  text-shadow: 4px 4px 0 #ff0070;
+  text-shadow: 4px 4px 0 var(--text-shadow);
 }
 
 .link,
 .footer__big-text {
-  text-shadow: 2px 2px 0 #ff0070;
+  text-shadow: 2px 2px 0 var(--text-shadow);
 }
 
 .link {
@@ -71,15 +71,11 @@
   margin: 10px 0 20px 0;
 }
 
-.rec {
-  color: var(--accent-color);
-  text-align: end;
-  padding: 2px 30px 0 0;
-}
-
 body {
   background-color: var(--body-background-color);
-  padding: 10px;
+  background-image: var(--bg-image);
+  background-attachment: fixed;
+  background-size: cover;
   position: relative;
   z-index: -10;
 }
@@ -91,13 +87,15 @@ body {
 }
 
 .row-position,
-.collumn-position {
+.row-collumn-position {
   margin: 0 0 50px 0;
 }
 
 .header {
   min-height: 648px;
   min-width: 355px;
+  margin: 10px;
+  height: 94vh;
   display: grid;
   grid-template-rows: 0 1fr 1fr 1fr;
   position: relative;
@@ -106,12 +104,13 @@ body {
 
 .header__theme-menu {
   place-self: center end;
+  margin: 10px 0 0 0;
 }
 
 .header__theme-menu-button {
   background-color: transparent;
   border: none;
-  padding: 0 13px;
+  padding: 0 13px 3px;
   color: var(--accent-color);
   text-align: center;
   font-family: "IBM Plex mono";
@@ -136,46 +135,20 @@ body {
 }
 
 .header__theme-menu-list {
-  height: 98px;
+  height: 100px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin: 7px 0 0 0;
+}
+
+.header__big-text {
+  margin: 13px 0 0 0;
 }
 
 .header__title {
   max-width: 364px;
   place-self: center end;
   margin: 0 0 13px 0;
-}
-
-.header__big-text {
-  margin: 12px 0 0 0;
-}
-
-.header-background::before {
-  content: "";
-  position: absolute;
-  top: -10px;
-  left: -10px;
-  width: calc(100% + 20px);
-  height: calc(100% + 20px);
-  background-image: var(--bg-image);
-  background-size: cover;
-  background-repeat: no-repeat;
-  z-index: -10;
-}
-
-.header-background::after {
-  content: "";
-  height: 12px;
-  width: 12px;
-  border-radius: 50%;
-  background-color: var(--accent-color);
-  filter: blur(2px);
-  right: 7px;
-  top: 7px;
-  position: absolute;
 }
 
 .decorated-zone::before {
@@ -201,12 +174,12 @@ body {
 }
 
 .main {
-  margin: 50px 0 50px 0;
+  margin: 50px 10px;
 }
 
 .footer {
-  min-height: 648px;
-  min-width: 355px;
+  height: 97vh;
+  margin: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -214,16 +187,13 @@ body {
 }
 
 @media (768px <= width < 1024px) {
-  body {
-    padding: 20px;
-  }
-
   .header__big-text,
   .footer__big-text {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
   .header {
-    min-height: 1004px;
+    height: 96vh;
+    margin: 20px;
   }
 
   .header__theme-menu-list {
@@ -231,26 +201,15 @@ body {
   }
 
   .header__big-text {
-    margin: 110px 0 0 -20px;
+    margin: 115px 0 0 -20px;
   }
 
   .header__title {
-    margin: 0px 0 148px 0;
-  }
-
-  .decorated-zone::after {
-    bottom: 20px;
-  }
-
-  .header-background::before {
-    top: -20px;
-    left: -20px;
-    width: calc(100% + 40px);
-    height: calc(100% + 40px);
+    margin: 0px 0 115px 0;
   }
 
   .main {
-    margin: 60px 0 0 0px;
+    margin: 80px 20px;
   }
 
   .row-position {
@@ -315,41 +274,27 @@ body {
   }
 
   .footer {
-    min-height: 984px;
-    box-sizing: border-box;
-  }
-
-  .footer .decorated-zone::after {
-    bottom: 0;
+    height: 96vh;
+    margin: 20px;
   }
 }
 
 @media (min-width: 1024px) {
-  body {
-    padding: 20px;
-  }
-
   .header__big-text,
   .footer__big-text {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 
   .header {
-    max-height: 728px;
-    grid-template-rows: 0 1fr 1fr 0;
-    margin: 0 0 80px 0;
-  }
-
-  .header-background::before {
-    top: -20px;
-    left: -20px;
-    width: calc(100% + 40px);
-    height: calc(100% + 40px);
+    margin: 20px;
+    height: 95vh;
+    grid-template-rows: 1fr 1fr 1fr;
   }
 
   .header__theme-menu {
     place-self: start center;
     position: absolute;
+    top: -10px;
   }
 
   .header__theme-menu-list {
@@ -358,16 +303,19 @@ body {
     flex-direction: row;
     justify-content: space-between;
     gap: 10px;
-    margin: 0;
   }
 
   .header__big-text {
-    margin: 300px 0 0 -20px;
+    margin: 55px 0 0 -20px;
   }
 
   .header__title {
-    margin: 0;
-    min-width: 490px;
+    margin: 0 0 60px 0;
+    max-width: 490px;
+  }
+
+  .main {
+    margin: 78px 20px;
   }
 
   .row-position {
@@ -432,6 +380,7 @@ body {
   }
 
   .footer {
-    min-height: 728px;
+    margin: 20px;
+    height: 94.5vh;
   }
 }

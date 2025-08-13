@@ -3,20 +3,41 @@
   здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
-:root {
-  --body-background-color: #000028;
-  --common-text-color: #f1b2ce;
-  --big-text-color: #db00ff;
-  --accent-color: #ff0070;
-  --accent-text-color: #ff0070;
-  --background-accent-color: #ff0070;
-  --background-accent-text-color: #000028;
-  --bg-image: url("/images/cover-image-dark.png");
-}
 
 .page.theme_dark {
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+  --body-background-color: #000028;
+  --common-text-color: #f1b2ce;
+  --big-text-color: #db00ff;
+  --accent-color: #ff0070;
+  --accent-text-color: #ff0070;
+  --background-accent-color: #ff0070;
+  --text-shadow: #ff0070;
+  --background-accent-text-color: #000028;
+  --bg-image: url("/images/cover-image-dark.png");
+}
+
+.rec {
+  color: var(--accent-color);
+  text-align: end;
+  padding: 2px 30px 0 0;
+}
+
+.rec::before {
+  content: "";
+  height: 14px;
+  width: 14px;
+  border-radius: 50%;
+  background-color: var(--accent-color);
+  filter: blur(2px);
+  right: 5px;
+  top: 5px;
+  position: absolute;
+}
+
+.rec::after {
+  content: "REC";
 }
