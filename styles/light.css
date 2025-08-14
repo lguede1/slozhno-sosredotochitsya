@@ -20,6 +20,10 @@
   --bg-image: url("/images/cover-image-light.png");
 }
 
+.page.theme_light .rec {
+  display: none;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     --body-background-color: #fff1f7;
@@ -29,9 +33,12 @@
     --accent-text-color: #353430;
     --background-accent-color: #ff8dcb;
     --text-shadow: #ff8dcb;
-    --rec-color: transparent;
     --background-accent-text-color: #353430;
     --bg-image: url("/images/cover-image-light.png");
+  }
+
+  .page.theme_auto .rec {
+    display: none;
   }
 }
 
