@@ -96,6 +96,28 @@ body {
   margin: 0 0 50px 0;
 }
 
+.rec {
+  color: var(--rec-color);
+  text-align: end;
+  padding: 2px 30px 0 0;
+}
+
+.rec::before {
+  content: "";
+  height: 14px;
+  width: 14px;
+  border-radius: 50%;
+  background-color: var(--rec-color);
+  filter: blur(2px);
+  right: 5px;
+  top: 5px;
+  position: absolute;
+}
+
+.rec::after {
+  content: "REC";
+}
+
 .header {
   min-height: 628px;
   min-width: 355px;

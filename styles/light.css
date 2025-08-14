@@ -19,6 +19,7 @@
   --accent-text-color: #353430;
   --background-accent-color: #ff8dcb;
   --text-shadow: #ff0070;
+
   --background-accent-text-color: #353430;
   --bg-image: url("/images/cover-image-light.png");
 }
@@ -31,12 +32,9 @@
     --accent-color: #353430;
     --accent-text-color: #353430;
     --background-accent-color: #ff8dcb;
+    --rec-color: transparent;
     --background-accent-text-color: #353430;
     --bg-image: url("/images/cover-image-light.png");
-  }
-
-  .page.theme_light .rec {
-    visibility: hidden;
   }
 }
 
